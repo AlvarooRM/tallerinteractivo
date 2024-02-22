@@ -1,0 +1,36 @@
+body, html {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+}
+#gameContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+#gameBoard {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 150px);
+    grid-gap: 10px;
+    justify-content: center;
+}
+.color {
+    width: 150px;
+    height: 150px;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    cursor: pointer;
+}
+#red { background-color: red; }
+#green { background-color: green; }
+#blue { background-color: blue; }
+#yellow { background-color: yellow; }
+.color:active { opacity: 1; }
+#controls button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}

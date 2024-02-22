@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital Inteligente</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div id="clock" class="clock"></div>
+        <div id="date" class="date"></div>
+        <div class="themes">
+            <button class="theme-button" data-theme="default">Por Defecto</button>
+            <button class="theme-button" data-theme="dark">Oscuro</button>
+            <button class="theme-button" data-theme="light">Claro</button>
+        </div>
+        <button id="alarmButton" class="alarm-button">Configurar Alarma</button>
+        <div id="alarmsContainer" class="alarms-container"></div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Configurar Nueva Alarma</h2>
+            <input type="time" id="alarmTime">
+            <button onclick="addAlarm()">Agregar Alarma</button>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
